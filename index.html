@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="brython.js"></script>
+    <script type="text/javascript" src="brython_stdlib.js"></script>
+    <!-- <script type="text/javascript" src="brython_modules.js"></script> -->
+  </head>
+
+  <!-- <body onload="brython(1)"> -->
+  <body onload="brython()" style="background-color: black" text="white">
+    <script src="frontend.py" type="text/python" defer></script>
+
+    <h1 id="current"></h1>
+    <h1 id="counter"></h1>
+
+    <label for="school">Enter the school of fencing:</label>
+    <div></div>
+    <textarea autofocus id="school" name="school" cols="20">
+lichtenauer</textarea
+    >
+
+    <div></div>
+    <label for="length">Enter the length for the hitstreak:</label>
+    <div></div>
+    <textarea id="length" name="length" cols="20">13</textarea>
+    <div></div>
+
+    <button id="get_streak" type="button">Calculate hitstreak</button>
+    <div></div>
+
+    <button id="stop" type="button">Reset</button>
+    <div></div>
+
+    <label for="mode">Unit for length (Move count or minutes)</label>
+    <button id="mode" type="button">Minutes</button>
+
+    <div></div>
+    <audio id='player' controls autoplay, preload="auto">
+      <source src="" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+  </body>
+</html>
